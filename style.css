@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+.site {
+    overflow-x: hidden!important;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background: rgba(184, 184, 184, 0.281);
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.totallogo{
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    
+}
+
+
+li {
+    list-style-type: none;
+    color: black;
+
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+a:hover{
+    color: green;
+
+}
+
+
+#home {
+    padding-left: 0px;
+    
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: 
+    linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.5) ),
+    url('https://golfscape.com/blog/wp-content/uploads/2019/03/carnoustie-golf-links-championship-course-scotland.jpg');
+    background-size: 100% 100%;
+    color: white;
+    text-shadow:3px 3px 10px black ;
+    height: 92vh;
+    
+}
+
+@keyframes headerani {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.totalheader {
+    margin: auto;
+    animation-name: headerani;
+    animation-duration: 3s;
+}
+
+#headerbtns {
+    padding: 0.5em;
+    animation-name: headerani;
+    animation-duration: 4s;
+}
+
+.details {
+    margin: 3px;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.details:hover {
+    background: rgb(236, 236, 236);
+    color: black;
+    border: solid 1px black;
+}
+ 
+section {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(184, 184, 184, 0.281); 
+    
+}
+
+.serviceheader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.servicepara {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+hr {
+    border: 0;
+    border-top: solid 2px black;
+    margin-bottom: 0px;
+    padding-top: 0px; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(184, 184, 184, 0.281); 
+
+}
+
+#background {
+    background
+}
+
+#golficon {
+    color: green;
+    padding-top: 25px;
+}
+
+#membericon {
+    color: green;
+    padding-top: 25px;
+}
+
+#eventicon {
+    color: green;
+    padding-top: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(70, 70, 70);
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden!important;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            body {
+                overflow-x: hidden!important;
+            }
+        }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        overflow-x: hidden!important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+    .site {
+        overflow-x: hidden!important;
+    }
+
+    nav{
+        height:6vh;
+    }
+
+    .golflogo{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .logotext {
+        font-size: 11px;
+    }
+
+    .navbar{
+        height:60vh;
+        top:6vh;
+        border-bottom: solid 1px #3C3C3C;
+        border-left: solid 1px #3C3C3C;
+    }
+
+
+    ul {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:rgba(184, 184, 184, .85); 
+        z-index: 1;  
+        display: hidden;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    li {
+        opacity: 0%;
+        color: black   
+    }
+
+    a:link {
+        color: black;
+    }
+
+    a:hover {
+        color: green;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midhr{
+        margin-top: 25px;
+    }
+
+    #golficon{
+        margin-top: 25px;
+        padding-bottom:
+    }
+
+    #membericon {
+        padding-top: 50px;
+    }
+
+    #eventicon {
+        padding-top: 50px;
+    }
+
+    hr {
+        margin-bottom: 0px;
+        
+    }
+
+
+    #memberp{
+        padding-bottom: 50px;
+    }
+
+    #golfp{
+        padding-bottom: 25px;
+    }
+
+    #tophr {
+        margin-top: 0px;
+    }
+
+
+    section p {
+        width: 50%;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+
+    @keyframes ulFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
